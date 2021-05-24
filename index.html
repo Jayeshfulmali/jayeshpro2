@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project_2</title>
+    <!-- <link rel="stylesheet" href="rough.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <style>
+        html{
+    height: 100%;
+    font-size: 62.5%;
+    font-family: Open Sans,open-sans,sans-serif;
+    
+   }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header{
+    height: 80px;
+    background-color: white;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+
+}
+#menu{
+    display: none;
+}
+
+.header img{
+    width: 10rem;
+    position: absolute;
+    /* top: 17px; */
+    left: 12%;
+
+}
+
+.header ul{
+    /* float:right ; */
+    margin-left: 38rem;
+
+}
+
+.header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    
+}
+
+.header ul li a {
+    position:relative;
+    font-size: 2rem;
+    color: black;
+    
+}
+
+/* .header ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background:black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:  .4s linear;
+} */
+
+/* .header ul li a:hover ::before{
+    transform: scaleX(1);
+    transform-origin: left;
+} */
+.header ul li a:hover{
+    border-bottom:.3rem solid #02a6d6;
+    transition:  .15s ;
+   
+    
+}
+
+
+.main{
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.main #img1{
+    height: 50vh;
+    overflow: hidden;
+}
+.main #img2{
+    height: 37vh;
+    
+    
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    /* margin-left: 20rem; */
+    /* margin-right: 20rem; */
+    /* margin-left: 25%; */
+    margin-left:1.5rem ;
+
+    /* margin-top:1.5% ;  */
+    margin-top:1.5rem ; 
+    padding-top: 3rem;
+    
+
+    
+}
+
+.heading{
+    color: white;
+    font-size: 4rem;
+    /* margin-left:1.5% ; */
+    margin-left:1.5rem ;
+
+    /* margin-top:1.5% ;  */
+    margin-top:1.5rem ; 
+
+
+}
+ 
+p{
+    color: white;
+    font-size: 2.5rem;
+    /* margin-left: 20rem;
+    margin-right: 20rem; */
+    /* margin-left: 25%; */
+    margin-left:1.5rem ;
+
+    /* margin-top:1.5% ;  */
+    margin-top:1.5rem ;
+}
+.main2{
+    margin: 2rem 10rem 0 10rem;
+}
+.footer1{
+    color: white;
+    background: rgb(34, 33, 33);
+    height: 25vh;
+}
+.footer1 ul{
+    
+    padding-top: 3rem;
+    text-align: center;
+
+}
+
+.footer1 ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    
+    
+    
+}
+
+.footer1 ul li a {
+    position:relative;
+    font-size: 2.5rem;
+    color: white;
+    
+}
+.footer1 p{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: rgb(136, 128, 128);
+   
+}
+
+
+.bottom-left {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 30px; */
+    font-size: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 5rem;
+}
+.bottom-left P {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 30px; */
+    font-size: 2rem;
+ 
+}
+
+
+#img1,#img2{
+   /* border: 2rem solid black; */
+    transition: 1s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    /* background: white; */
+}
+.i1 {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: .5rem solid black; 
+    color: white;
+}
+.i2{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: .2rem solid black; 
+    
+}
+
+
+ #img1:hover{
+    transform: scale(1.1);
+    /* background: rgb(196, 127, 127); */
+}
+#img2:hover{
+    transform: scale(1.1);
+    /* background-color: black; */
+}
+*{
+    box-sizing: border-box;
+}
+
+.i1 #img1{
+        width: 100%;
+        height: auto;
+}
+.im1{
+    padding: 0 1rem;
+    float: left;
+    width: 33%;
+}
+.i2 #img2{
+    width: 100%;
+    height: auto;
+    
+    /* padding-left: 10%; */
+    
+    
+}
+.im2{
+padding: 0 2rem 0 1.4rem;
+float: right;
+width: 25%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer2{
+    background-color: black;
+    
+    /* padding-left: 40%; */
+    /* padding-right: 50%; */
+    
+}
+.para{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+.footer2 .im3{
+    /* padding-left: 40rem; */
+}
+.corus{
+    height: 2vh;
+    margin-left: auto;
+    margin-right:auto;
+    padding-left: 70rem;
+    
+
+   
+}
+
+.disneyc, .disneyj,.teletoon,.treehouse,.ytv{
+    height: 8vh;
+    align-items: center;
+    padding-left: 10rem;
+    /* padding-right: 5rem; */
+   
+
+}
+.im3{
+    float: left;
+    margin-bottom:1rem;
+    
+
+
+    /* width: 20vw; */
+    /* padding-left: 7rem; */
+    
+    
+    
+}
+#img3{
+    width: 100%;
+    
+
+
+    
+}
+#line{
+    padding-right: 3rem;
+    padding-top: 4rem;
+    border-right: .1rem solid rgb(100, 97, 97);
+    border-top: .1rem solid black;
+    height: 8vh;
+    /* width: 2rem; */
+}
+.line{
+    color: white;
+    display: none;
+}
+@media screen and (max-width:2700px){
+    .header ul{
+        /* float:right ; */
+        margin-left: 45rem;
+    
+    }
+}
+@media screen and (max-width:1410px){
+    .disneyc, .disneyj,.teletoon,.treehouse,.ytv{
+        height: 5vh;
+    }
+    .main2{
+        margin: 1rem 1rem 0 1rem;
+    }
+    .bottom-left {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-size: 30px; */
+        font-size: 1.5rem;
+      position: absolute;
+      bottom: 2rem;
+      left: 5rem;
+    }
+    .bottom-left P {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-size: 30px; */
+        font-size: 1rem;
+     
+    }
+}
+
+@media screen and (max-width:1600px){
+    .disneyc, .disneyj,.teletoon,.treehouse,.ytv{
+        height: 6vh;
+        align-items: center;
+        padding-left: 6rem;
+        /* padding-right: 5rem; */
+       
+    
+    }
+
+}
+@media screen and (max-width:2200px){
+#line{
+        display: none;
+    }
+    .line{
+        text-align: center;
+        font-size: 7rem;
+        color: white;
+        display: block;
+    }
+    
+    .disneyc, .disneyj,.teletoon,.treehouse,.ytv{
+        height: 8vh;
+        align-items: center;
+        padding-left: 8rem;
+       
+
+
+        /* padding-right: 5rem; */
+       
+    
+    }
+    .im3{
+        width: 15%;
+        /* padding-left: 25rem; */
+        /* margin-left: 25rem; */
+        
+        
+    }
+}
+@media screen and (max-width:1214px){
+   
+
+}
+
+@media screen and (max-width:1100px) {
+    .header{
+        /* height: .001vh; */
+    }
+    .header img{
+        width: 8rem;
+        position: absolute;
+        top: 4rem;
+        left: 50%;
+    
+    }
+    .header ul li a {
+        display: none;
+        
+    }
+    .header #menu{
+        /* width: 5rem; */
+        display: block;
+        margin-left: 2rem;
+        font-size: 3rem;
+        
+       
+        
+    }
+
+    .main2{
+        margin: 1rem 1rem 0 1rem;
+    }
+     #image1{
+        width: 100%;
+    }
+    .im1 {
+        width: 50%;
+        margin: 6px 0;
+    }
+    
+    .im2{
+        /* width: 40%;
+        margin: 6px 0; */
+        width: 50%;
+        margin: 6px 0;
+    }
+    .main #img2{
+       
+        height: 35vh;
+        width: 46vw;
+    }
+    .disneyc, .disneyj,.teletoon,.treehouse,.ytv{
+        height: 7vh;
+        align-items: center;
+        padding-left: 7rem;
+       
+
+
+        /* padding-right: 5rem; */
+       
+    
+    }
+    .im3{
+        width: 60%;
+        padding-left: 38%;
+        /* margin-left: 25rem; */
+        
+        
+    }
+    
+    
+}
+@media screen and (max-width:1070px){
+   
+}
+@media screen and (max-width:950px) {
+    html{
+        /* height: 100%; */
+        font-size: 55%;
+        
+       }
+    #image1{
+       width: 100%;
+   }
+   .im1 {
+       width: 50%;
+       margin: 6px 0;
+   }
+   
+   .im2{
+       
+       width: 50%;
+       margin: 6px 0;
+   }
+   .main #img2{
+      
+       height: 20vh;
+       width: 45vw;
+   }
+   
+}
+@media screen and (max-width:700px) {
+    html{
+        /* height: 100%; */
+        font-size: 45%;
+        
+       }
+    #image1{
+       width: 100%;
+   }
+   .im1 {
+       width: 50%;
+       margin: 6px 0;
+   }
+   .im2{
+       /* width: 40%;
+       margin: 6px 0; */
+       width: 50%;
+       margin: 6px 0;
+   }
+   .main #img2{
+      
+       height: 10vh;
+       width: 40vw;
+   }
+   .im3{
+    width: 60%;
+    padding-left: 36%;
+    /* margin-left: 25rem; */
+    
+    
+}
+   
+}
+@media  screen and (max-width:550px) {
+    .im1{
+        width: 100%;
+        
+    }
+    .im2{
+        width: 100%;
+        
+        
+    }
+    .main #img2{
+       
+        height: 25vh;
+        width: auto;
+    }
+    .im3{
+        width: 60%;
+        padding-left: 30%;
+        /* margin-left: 25rem; */
+        
+        
+    }
+   
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29195345/CartoonNetwork_NavLogo_120x72.jpg"
+            alt="">
+            <i class="fas fa-bars" id="menu">   MENU</i>
+        <ul class="bar">
+           
+            <li><a href="">HOME</a></li>
+            <li><a href="">SCHEDULE</a></li>
+            <li><a href="">WHERE TO WATCH</a></li>
+            <li><a href="">CONTESTS</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main2">
+        <!-- <h1 class="heading">FEATURED</h1> -->
+        <div class="heading">FEATURED</div>
+        <div class="im1" id="image1"><div class="i1"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04133345/CartoonNetwork_Ben10_462x386.jpg"
+            id="img1" alt=""> <div class="bottom-left">BEN 10 <p>weekdays 8:30 ET/PT</p></div>
+        </div>
+        </div>
+             
+        <div class="im1"><div class="i1"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200714/CartoonNetwork_OKKO_462x386.jpg"
+            id="img1" alt=""><div class="bottom-left">Ok. K.O! Let's Be Heroes <p>weekdays 9:30 ET/PT</p></div></div>
+        </div>
+             
+        <div class="im1">
+            <div class="i1"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04133345/CartoonNetwork_Ben10_462x386.jpg" id="img1"  alt="">
+                <div class="bottom-left">BEN 10 <p>weekdays 8:30 ET/PT</p></div></div>
+        </div>
+        
+        <div class="im2" >
+            <div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200734/CartoonNetwork_StevenUniverse_462x386.jpg"
+               class="image2" id="img2" alt=""><div class="bottom-left">STEVEN UNIVERSE <p>weekdays 10:30 ET/PT</p></div></div>
+        </div>
+             
+        <div class="im2"><div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200805/CartoonNetwork_ThePowerPuffGirls_462x386.jpg"
+            id="img2" alt=""><div class="bottom-left">WE BARE BEARS <p>weekdays 11:30 ET/PT</p></div></div>
+        </div>
+             
+        <div class="im2">
+            <div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200826/CartoonNetwork_TheRegularShow_462x386.jpg"
+                id="img2"  alt=""><div class="bottom-left">THE POWERPUFF GIRLS <p>weekdays 12:30 ET/PT</p></div></div>
+        </div>
+            
+       <div class="im2"><div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200850/CartoonNetwork_AdventureTime_462x386.jpg"
+        id="img2"  alt=""><div class="bottom-left">THE REGURAL SHOW<p>weekdays 1:30 ET/PT</p></div></div>
+    </div>
+            
+        <div class="im2"><div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04142757/CartoonNetwork_WeBareBears_462x3861.jpg"
+            id="img2" alt=""><div class="bottom-left">ADVENTURE TIME<p>weekdays 2:30 ET/PT</p></div></div>
+        </div>
+             
+        <div class="im2"><div class="i2"> <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130736/AppleAndOnion.jpg"
+            id="img2"  alt=""><div class="bottom-left">APPLE AND ONION <p>weekdays 3:30 ET/PT</p></div></div>
+        </div>
+            
+        <div class="im2">
+            <div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130740/MaoMao.jpg"
+                id="img2"  alt=""><div class="bottom-left">MAO MAO: HEROES OF PURE HEART <p>weekdays 4:30 ET/PT</p></div></div>
+        </div>
+           
+        
+           <div class="im2"> <div class="i2"><img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130745/AWOG.jpg"
+            id="img2"  alt=""><div class="bottom-left">THE AMAZING WORLD OF GUMBALL <p>weekdays 5:30 ET/PT</p></div></div>
+            
+        </div>
+        
+        <h1>  <br><br> ABOUT CARTOON NETWORK</h1> <br>
+        <p>Cartoon Network (Canada) is the destination for kids and families seeking hilarious animation. Cartoon
+            Network is the funny and unexpected brand that stands out from the pack in a way that kids can relate.</p> <br><br><br><br>
+        <h1>CONTACT US</h1><br>
+        <p>We want to hear from you! To share your feedback, please email us at info@cartoonnetwork.ca</p> <br><br><br><br><br><br><br><br>
+    </div>
+        <div class="footer1">
+            <ul>
+                <li> <a href="">About Us</a> </li>
+                <li> <a href="">Privacy Policy</a> </li>
+                <li> <a href="">Terms of Use</a> </li>
+                <li>  <a href="">Advertising Standard Terms</a> </li>
+                <li> <a href=""> Subscribe to Channel</a></li>
+            </ul>
+            <br>
+            <p>© 2021 Corus Entertainment Inc. All rights reserved. Corus Television</p>
+        </div>
+        <div class="footer2">
+            <!-- <div class="line"><div class="im4"><div><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/corus-logo.svg"  class="corus" alt=""></div></div></div> -->
+<div class="line">corus.</div>
+            <div class="para">Other Corus Kids Websites</div>
+            <div class="im3"><div id="line"><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/corus-logo.svg"  class="corus" alt=""></div></div>
+            
+            <div class="im3"><div id="img3" ><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/disney-channel.svg"    class="disneyc"   alt="" style="color: aquamarine;"></div></div>
+            <div class="im3"><div id="img3" ><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/disney-junior.svg"  class="disneyj" alt=""></div></div>
+            <div class="im3"><div id="img3" ><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/teletoon.svg" class="teletoon" alt=""></div></div>
+            <div class="im3"><div id="img3" ><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/treehouse.svg" class="treehouse" alt=""></div></div>
+            <div class="im3"><div id="img3" ><img src="https://www.cartoonnetwork.ca/wp-content/themes/digi-theme/assets/icons/ytv.svg" class="ytv" alt=""></div></div>
+            
+        </div>
+
+
+    </div>
+</body>
+
+</html>
